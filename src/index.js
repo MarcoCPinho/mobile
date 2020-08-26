@@ -30,7 +30,7 @@ export default function App() {
             <SafeAreaView style={styles.container}>
                 <FlatList
                     data={projects}
-                    ketExtractor={project => project.id}
+                    keyExtractor={project => project.id}
                     renderItem={({ item: project }) => (
                         <Text style={styles.project}>{project.title}</Text>
                     )}
